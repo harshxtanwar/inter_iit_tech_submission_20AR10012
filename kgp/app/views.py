@@ -13,4 +13,6 @@ def query_searchbar(request):
     if request.method == "GET":
         print('searchingggg', request.GET.get('search_string'))
 
-    return render(request, 'query_done.html', {'hel':'asdsdsadasdsadsadsadsad'})
+    hel = [{'a':'kuch bhi'}]
+
+    return render(request, 'query_done.html', {'hel':hel})
