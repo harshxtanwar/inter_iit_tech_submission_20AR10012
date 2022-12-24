@@ -11,6 +11,8 @@
 
 </head>
 <body>
+    <!-- <div class="nav_bar"><p>This is a navigation bar</p></div> -->
+
     <div class="center">
         <h2>Feel free to search and browse through your database :)</h2>
     </div>
@@ -19,6 +21,21 @@
         <input type="text" name="search_string" placeholder="Search..." id="search_string">
         <button type="submit">SEARCH</button>
         </form> 
+    </div>
+
+    <div class="center_or">
+        <h2 style="color: aliceblue;">OR</h2>
+    </div>
+
+    <div class="center">
+        <h2>Add new link to your database</h2>
+    </div>
+    <div class="main">
+        <form method="post" action="/post_input">
+        {% csrf_token%}
+        <input type="text" name="input" placeholder="Insert new link" id="input">
+        <button type="submit" onclick="alert('Your database has been updated')" >ENTER</button>
+    </form> 
     </div>
     
 </body>

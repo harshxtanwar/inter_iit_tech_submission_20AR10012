@@ -921,11 +921,29 @@ def query_searchbar(request):
         search_text = request.GET.get('search_string')
 
         result = []
+
+        
+
         for i in listt:
+            if search_text == i:
+                result.append({'link':i})
+
             hello = re.split('//|/|-|:|@|\.|\,', i)
             if search_text in hello:
                 result.append({'link':i})
+            
 
     # hel = [{'a':'kuch bhi'}]
 
     return render(request, 'query_done.html', {'result':result})
+
+def post_data(request):
+
+    if request.method == "POST":
+        print(request.POST.get('input'))
+        listt.append(request.POST.get('input'))
+    
+    
+    he = {1 : "coming from backend"}
+    ## NO backend code required here
+    return render(request, 'home.html', {'hel':he})

@@ -6,15 +6,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'result.css'%}" />
     <title>Document</title>
 </head>
 <body>
+    <div class="nav_bar">
+        
+        
+        <a class="btn btn-primary" href="/"><h2 style="color: black;">HOME</h2></a>
+        
+    </div>
+
+    <div class="center_head">
+    <h1>The following are the queried links</h1>
+    </div>
 
     {% for i in result %}
     
-    
-    <p>{{i.link}}</p>
-    
+    <div class="center">
+    <a href={{i.link}}><p>{{i.link}}</p></a>
+    </div>
+
     {% endfor %}
 </body>
 </html>

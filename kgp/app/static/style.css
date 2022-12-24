@@ -5,14 +5,22 @@
     margin: auto;
   }
 
-  .center_links {
+  .center_or {
     text-align: center;
-    background-color: rgb(18, 100, 106);
-    width: 48%;
-    padding: auto;
-    margin:0%;
+
+    margin: auto;
+    color: aliceblue;
   }
 
+  .nav_bar {
+    width: 100vw;
+  /* height: 10vh;*/
+    height: max(10vh, 100px);
+    background-color: rgb(191, 49, 234);
+    display : flex;
+    align-items : center;
+  }
+  
   *{
     margin:0px;
     padding:8px;
