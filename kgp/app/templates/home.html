@@ -8,31 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css'%}" />
     <title>Document</title>
-<!-- 
-    <style>
-        .center {
-          text-align: center;
-        }
-    </style> -->
+
 </head>
 <body>
     <div class="center">
-        <h1>Feel free to search and browse through your database :)</h1>
+        <h2>Feel free to search and browse through your database :)</h2>
     </div>
-    
-    <div id="cover">
-        <form method="get" action="">
-          <div class="tb">
-            <div class="td"><input type="text" placeholder="Search" required></div>
-            <div class="td" id="s-cover">
-              <button type="submit">
-                <div id="s-circle"></div>
-                <span></span>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
+    <div class="main">
+        <form method="get" action="/get_query">
+        <input type="text" name="search_string" placeholder="Search..." id="search_string">
+        <button type="submit">SEARCH</button>
+        </form> 
+    </div>
     
 </body>
 </html>
