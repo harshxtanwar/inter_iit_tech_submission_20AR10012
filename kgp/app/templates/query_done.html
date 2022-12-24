@@ -1,3 +1,5 @@
+{% load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +10,11 @@
 </head>
 <body>
 
-    {% for i in hel %}
-    <p>hello there world</p>
+    {% for i in result %}
     
-    <h1>{{i.a}}</h1>
-
+    
+    <p>{{i.link}}</p>
+    
     {% endfor %}
 </body>
 </html>
