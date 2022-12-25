@@ -31,8 +31,8 @@ cd inter_iit_tech_submission_20AR10012/kgp
 docker-compose build
 ```
 
-> NOTE: in case youe get a permissions 13 error while building your docker image, it means you have npt added your user yet to docker \ 
-> sudo su $USER
+> NOTE: in case youe get a permissions 13 error while building your docker image, it means you have not added your user yet to docker 
+> use command: ```sudo su $USER``` in that case
 
 5. Now run the docker-compose file 
 ```
